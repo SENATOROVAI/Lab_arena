@@ -1,0 +1,13 @@
+# Зависимости (Python 3.11+)
+# Установка:  python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+
+# --- arena.py (задание 2) ---
+flask>=3.1
+openai>=2.0
+
+# --- rag_app.py (задание 3) ---
+chromadb>=1.5
+pypdf>=6.0          # чтение PDF
+python-docx>=1.1    # чтение DOCX
+rank-bm25>=0.2      # лексический поиск BM25 для hybrid search
+numpy>=2.0          # подтягивается chromadb; используется в оригинальных 01–03
